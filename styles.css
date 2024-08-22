@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.flight{
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "airline-name . . . ."
+    "source-city-code . destination-city-code . ."
+    "departure-time flight-duration arrival-time flight-fare view-fare"
+    ". . . . flight-details";
+    gap: 1px;
+
+}
+#airline-name{
+    grid-area: airline-name;
+}
+#source-city-code{
+    grid-area: source-city-code;
+}
+#destination-city-code{
+    grid-area: destination-city-code;
+}
+#departure-time{
+    grid-area: departure-time;
+}
+#flight-duration{
+    grid-area: flight-duration;
+}
+#arrival-time{
+    grid-area: arrival-time;
+}
+#flight-fare{
+    grid-area: flight-fare;
+}
+#view-fare{
+    grid-area: view-fare;
+}
+#flight-details{
+    grid-area: flight-details;
+}
